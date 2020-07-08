@@ -1,4 +1,4 @@
-package vancover
+package unitconv
 
 // KnottoKilomerh (knot float32) float32
 func KnottoKilomerh(knot float32) float32 {
@@ -10,8 +10,8 @@ func KnottoMeterS(knot float32) float32 {
 	return knot / 1.944
 }
 
-// KnottoFootS (knot float32) float32
-func KnottoFootS(knot float32) float32 {
+// KnottoFeetS (knot float32) float32
+func KnottoFeetS(knot float32) float32 {
 	return knot * 1.688
 }
 
@@ -55,8 +55,8 @@ func KilometerhtoMilesh(Kilometerh float32) float32 {
 	return Kilometerh / 1.609
 }
 
-// KilometerhtoFoots (Kilometerh float32) float32
-func KilometerhtoFoots(Kilometerh float32) float32 {
+// KilometerhtoFeets (Kilometerh float32) float32
+func KilometerhtoFeets(Kilometerh float32) float32 {
 	return Kilometerh / 1.097
 }
 

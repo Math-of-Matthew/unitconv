@@ -4,19 +4,23 @@
 package unitconv
 
 const (
-	kmmi = 0.62137
-	yame = 1.0936
+	// Kmmi is a value used to convert Kilometers to Miles
+	Kmmi = 0.62137
+	// Yame is a value used to convert Yards and Miles
+	Yame = 1.0936
+	// Ftya is used to convert feet to yards
+	Ftya = 0.33333
 )
 
 // MilestoKilometers returns Kilometers in x Miles
 func MilestoKilometers(kilometers float32) float32 {
-	return kilometers * kmmi
+	return kilometers * Kmmi
 
 }
 
 // KilometerstoMiles return Miles in x Kilometers
 func KilometerstoMiles(miles float32) float32 {
-	return miles / kmmi
+	return miles / Kmmi
 }
 
 // FeetoMeters converts feet to meters
@@ -52,12 +56,12 @@ func InchestoFeet(inches float32) float32 {
 
 // MeterstoYard (meters float32) returns float32 in Yard value
 func MeterstoYard(meters float32) float32 {
-	return meters * yame
+	return meters * Yame
 }
 
 // YardtoMeters (yard float32) returns float32 in Meters value
 func YardtoMeters(yard float32) float32 {
-	return yard / yame
+	return yard / Yame
 }
 
 // YardtoFeet (feet float32) returns float32 in Yard value

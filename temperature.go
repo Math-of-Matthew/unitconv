@@ -3,10 +3,10 @@ package unitconv
 //Mateus R. Moreira 03/10/2019
 //temperature.go is the source of all temperature formulas
 
-//FahrenhetoCelcius converts from Fahrenheit to Celcius
-func FahrenhetoCelcius(fahrenheit float32) float32 {
-	celcius := (fahrenheit - 32) * 5 / 9
-	return celcius
+//FahrenhetoCelsius converts from Fahrenheit to Celcius
+func FahrenhetoCelsius(fahrenheit float32) float32 {
+	celsius := (fahrenheit - 32) * 5 / 9
+	return celsius
 }
 
 // FahrenhetoKelvin converts from Fahrenheit to Kelvin
@@ -15,15 +15,15 @@ func FahrenhetoKelvin(fahrenheit float32) float32 {
 	return kelvin
 }
 
-// CelciustoFahrenhe converts from Celcius to Fahrenheit
-func CelciustoFahrenhe(celcius float32) float32 {
-	fahrenheit := (celcius * (5 / 9)) + 32
+// CelsiustoFahrenhe converts from Celcius to Fahrenheit
+func CelsiustoFahrenhe(celsius float32) float32 {
+	fahrenheit := (celsius * (5 / 9)) + 32
 	return fahrenheit
 }
 
-// CelciustoKelvin  converts from Celcius to Kelvin
-func CelciustoKelvin(celcius float32) float32 {
-	kelvin := celcius + 273.15
+// CelsiustoKelvin  converts from Celsius to Kelvin
+func CelsiustoKelvin(celsius float32) float32 {
+	kelvin := celsius + 273.15
 	return kelvin
 }
 
@@ -33,8 +33,8 @@ func KelvintoFahrenhe(kelvin float32) float32 {
 	return fahrenheit
 }
 
-// KelvintoCelcius converts from Kelvin to Celciuss
-func KelvintoCelcius(kelvin float32) float32 {
-	celcius := kelvin - 273.15
-	return celcius
+// KelvintoCelsius converts from Kelvin to Celciuss
+func KelvintoCelsius(kelvin float32) float32 {
+	celsius := kelvin - 273.15
+	return celsius
 }
